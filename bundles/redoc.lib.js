@@ -6798,7 +6798,7 @@ var defaultTheme = {
     },
     rightPanel: {
         backgroundColor: '#ffffff',
-        width: '40%',
+        width: '0%',
         textColor: '#333333'
     },
     codeSample: {
@@ -7294,7 +7294,7 @@ var ErrorBoundary_ErrorBoundary = /** @class */ (function (_super) {
                 external_react_["createElement"]("br", null),
                 external_react_["createElement"]("small", null,
                     " Commit: ",
-                    "bcae2d5d"));
+                    "46f465c5"));
         }
         return external_react_["Children"].only(this.props.children);
     };
