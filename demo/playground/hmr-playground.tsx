@@ -17,7 +17,7 @@ const renderRoot = (props: RedocProps) =>
     document.getElementById('example'),
   );
 
-const specUrl = 'tt.json';
+const specUrl = 'https://redocly.github.io/redoc/openapi.yaml';
 
 let store;
 const options: RedocRawOptions = { nativeScrollbars: false };

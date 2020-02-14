@@ -4,7 +4,7 @@ import { isPayloadSample, OperationModel, RedocNormalizedOptions } from '../../s
 import { PayloadSamples } from '../PayloadSamples/PayloadSamples';
 import { SourceCodeWithCopy } from '../SourceCode/SourceCode';
 
-import { RightPanelHeader, Tab, TabList, TabPanel, Tabs } from '../../common-elements';
+import { TabList, TabPanel, Tabs } from '../../common-elements';
 import { OptionsContext } from '../OptionsProvider';
 
 export interface RequestSamplesProps {
