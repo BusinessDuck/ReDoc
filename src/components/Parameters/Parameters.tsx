@@ -2,14 +2,13 @@ import * as React from 'react';
 import { DropdownOrLabel } from '../DropdownOrLabel/DropdownOrLabel';
 import { ParametersGroup } from './ParametersGroup';
 
-import { UnderlinedHeader } from '../../common-elements';
-
 import { MediaContentModel } from '../../services';
 import { FieldModel, RequestBodyModel } from '../../services/models';
 import { MediaTypesSwitch } from '../MediaTypeSwitch/MediaTypesSwitch';
 import { Schema } from '../Schema';
 
 import { Markdown } from '../Markdown/Markdown';
+import { UnderlinedHeader } from '../../common-elements/headers';
 
 function safePush(obj, prop, item) {
   if (!obj[prop]) {
@@ -61,7 +60,7 @@ export class Parameters extends React.PureComponent<ParametersProps> {
 
 function DropdownWithinHeader(props) {
   return (
-    <UnderlinedHeader key="header">
+    <UnderlinedHeader>
       Request Body schema: <DropdownOrLabel {...props} />
     </UnderlinedHeader>
   );
