@@ -4,10 +4,12 @@ import * as React from 'react';
 import { ExternalDocumentation } from '../ExternalDocumentation/ExternalDocumentation';
 import { AdvancedMarkdown } from '../Markdown/AdvancedMarkdown';
 
-import { H1, H2, MiddlePanel, Row, Section, ShareLink } from '../../common-elements';
+import { H1, H2, MiddlePanel, ShareLink } from '../../common-elements';
 import { ContentItemModel } from '../../services/MenuBuilder';
 import { GroupModel, OperationModel } from '../../services/models';
 import { Operation } from '../Operation/Operation';
+import { Section, Row } from '../../common-elements/panels';
+
 
 @observer
 export class ContentItems extends React.Component<{
@@ -71,7 +73,7 @@ export class SectionItem extends React.Component<ContentItemProps> {
     return (
       <>
         <Row>
-          <MiddlePanel compact={level !== 1}>
+          <MiddlePanel compact={false}>
             <Header>
               <ShareLink to={this.props.item.id} />
               {name}
